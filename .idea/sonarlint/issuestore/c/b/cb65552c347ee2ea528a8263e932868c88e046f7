@@ -1,0 +1,15 @@
+
+f
+java:S3008	"PRename this field "RuleX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂýËá
+k
+java:S3008"PRename this field "RuleY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀçàÌþÿÿÿÿ
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ˆúÑÉ8ñÆÇ¯ý/
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(øªäÑúÿÿÿÿ
+7
+java:S1643"Use a StringBuilder instead.(Œ¹û“ÿÿÿÿÿ
+2
+java:S1643"Use a StringBuilder instead.(‹€Šß
+2
+java:S1643"Use a StringBuilder instead.(”˜ôÉ
