@@ -1,5 +1,5 @@
 import sas.Rectangle;
-import sas.Tools;
+import sas.Sprite;
 
 import java.awt.*;
 
@@ -10,9 +10,9 @@ public class LSystem {
     //Regel "ersetze alle Y mit -FX-Y" definieren
     private static String RuleY = "-FX-Y";
 
-    public static Output run(String input, double x, double y, double angle, double width, double lenght){
-        //farbe für diese iterration festlegen
-        Color color = new Color(Tools.randomNumber(0,255),Tools.randomNumber(0,255),Tools.randomNumber(0,255));
+    public static Output run(String input, double x, double y, double angle, double width, double lenght, Sprite vorher){
+        vorher.setHidden(true);
+        Sprite part = new Sprite();
         //die anzahl der Zeichen, die von der zeichenkette schon gemalt wurden
         int leave = input.length();
         //bei dem erstem mal den zähler für die bereits erstellten striche zurück auf null setzen
@@ -29,8 +29,9 @@ public class LSystem {
                 output = output + input.charAt(i);
             }
         }
+        double farbe = 25500000/output.length();
         //Die output zeichenkette durchgehen und malen ABER erst ab dem zeichen, welches noch nicht gemalt wurde
-        for (int i = leave; i < output.length(); i++) {
+        for (int i = 0; i < output.length(); i++) {
             leave--;
             if(output.charAt(i) == '+') {
                 angle = angle + 270;
@@ -41,8 +42,9 @@ public class LSystem {
                     angle = angle - 360;
                 }
                 //den strich malen
-                Rectangle linie = new Rectangle(x,y,width,lenght, color);
+                Rectangle linie = new Rectangle(x,y,width,lenght, new Color((int)(i*farbe/100000),20,255 - (int)(i*farbe/100000)));
                 linie.turn(x,y,angle);
+                part.add(linie);
                 // den endpunkt der linie anhand des Winkels festlegen
                 if(angle == 0){
                     y = y + lenght;
@@ -56,6 +58,6 @@ public class LSystem {
             }
         }
         //die neuen regeln an Main.java rueckgeben
-        return new Output(x,y,angle,output);
+        return new Output(x,y,0,output,part);
     }
 }

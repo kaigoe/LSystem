@@ -1,3 +1,4 @@
+import sas.Sprite;
 import sas.Text;
 import sas.View;
 
@@ -22,7 +23,7 @@ public class Main {
         //zähler erstellen für iterrationen
         int iterration = 0;
         //Die starteinstellungen festlegen (siehe Output.java fuer mehr infos)
-        Output output = new Output(fensterbreite/4, fensterhoehe/2, 180, "FX");
+        Output output = new Output(fensterbreite/4, fensterhoehe/2, 180, "FX", new Sprite());
         //in die konsole schreiben
         System.out.print("Wir starten mit 'FX' wollen sie Fortfaren? (Enter/Nein): ");
         //ein textfeld um in dem fenster etwas zu visualisieren
@@ -34,7 +35,7 @@ public class Main {
             //iterrationszähler erhöhen
             iterration = iterration + 1;
             //neue Regeln festlegen, nachdem neue itteration durchgeführt wurde
-            output = LSystem.run(output.getOutput(), output.getX(),output.getY(),output.getAngle(),strichBreite, strichlänge);
+            output = LSystem.run(output.getOutput(), fensterbreite/2, fensterhoehe/2,90+(90*iterration),strichBreite, 700*(Math.pow(2.0/3.0,iterration)), output.getPart());
 
             while(!view.keyPressed('n') && run){
                 if(view.keyPressed('q')) run = false;

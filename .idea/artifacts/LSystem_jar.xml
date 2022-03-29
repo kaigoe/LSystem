@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LSystem_jar</output-path>
+    <root id="archive" name="LSystem.jar">
+      <element id="module-output" name="LSystem" />
+      <element id="library" level="application" name="sasRetina_java8 (2)" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/sas_java8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
