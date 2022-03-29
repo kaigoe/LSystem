@@ -7,7 +7,6 @@ public class Main {
     private static int fensterbreite = 1600;
     private static int fensterhoehe = 1000;
     private static double strichBreite = 1;
-    private static double strichlänge = 5;
     private static View view;
 
     public static void main(String[] args){
@@ -42,7 +41,8 @@ public class Main {
                 view.wait(10);
             }
             view.keyBufferDelete();
+            text.setText("Sie heben " + iterration + " iterrationen ausgeführt!");
         }
-        text.setText("Sie heben " + iterration + " iterrationen ausgeführt!");
+        new Text(100,100, "ZUM BEENDEN ESC DRÜCKEN!! ~ KAI");
     }
 }

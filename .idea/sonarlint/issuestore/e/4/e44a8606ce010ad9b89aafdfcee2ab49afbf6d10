@@ -1,0 +1,16 @@
+
+i
+java:S1450
+"SRemove the "view" field and declare it as a local variable in the relevant methods.(ûÜÍ«
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¸ÕË}
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(¶´›§þÿÿÿÿ
+]
+java:S2184"BCast one of the operands of this division operation to a "double".(üÚÿºýÿÿÿÿ
+]
+java:S2184"BCast one of the operands of this division operation to a "double".(üÚÿºýÿÿÿÿ
+X
+java:S2184%"BCast one of the operands of this division operation to a "double".(Óé¯½
+X
+java:S2184%"BCast one of the operands of this division operation to a "double".(Óé¯½
+X
+java:S2184%"BCast one of the operands of this addition operation to a "double".(Óé¯½
