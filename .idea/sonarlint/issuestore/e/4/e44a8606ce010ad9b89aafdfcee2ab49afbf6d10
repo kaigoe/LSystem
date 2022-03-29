@@ -1,28 +1,0 @@
-
-m
-java:S3008"WRename this field "strichlÃ¤nge" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ§ºº
-i
-java:S1450"SRemove the "view" field and declare it as a local variable in the relevant methods.(ûÜÍ«
-M	java:S106%"9Replace this use of System.out or System.err by a logger.(¸ÕË}
-S	java:S106+"9Replace this use of System.out or System.err by a logger.(¶´›§şÿÿÿÿ
-;
-java:S1128"Remove this duplicated import.(€é²Å8Ö¯±ı/
-@
-java:S1128"Remove this duplicated import.(ªº»Úıÿÿÿÿ8Ö¯±ı/
-;
-java:S1128"Remove this duplicated import.(ãˆÎÉ8Ö¯±ı/
-@
-java:S1128"Remove this duplicated import.(åğ×±ûÿÿÿÿ8Ö¯±ı/
-;
-java:S1128	"Remove this duplicated import.(€é²Å8èÍµ±ı/
-@
-java:S1128
-"Remove this duplicated import.(ªº»Úıÿÿÿÿ8èÍµ±ı/
-;
-java:S1128"Remove this duplicated import.(ãˆÎÉ8èÍµ±ı/
-@
-java:S1128"Remove this duplicated import.(åğ×±ûÿÿÿÿ8èÍµ±ı/
-X
-java:S2184#"BCast one of the operands of this division operation to a "double".(Á‚šÀ
-X
-java:S2184#"BCast one of the operands of this division operation to a "double".(Á‚šÀ

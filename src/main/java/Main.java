@@ -1,16 +1,6 @@
 import sas.Text;
 import sas.View;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Locale;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Locale;
-
 public class Main {
     //werte definieren
     private static int fensterbreite = 1600;
